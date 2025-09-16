@@ -1,4 +1,4 @@
-name: Deploy Quarto project to GitHub Pages
+name: Pull news data, output as JSON
 
 on:
   workflow_dispatch:
