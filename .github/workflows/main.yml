@@ -1,7 +1,11 @@
 name: Pull news data, output as JSON
 
 on:
-  workflow_dispatch:
+  push:
+    branches: master
+
+permissions:
+  contents: write
   
 jobs:
   # Build job
