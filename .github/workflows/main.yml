@@ -23,6 +23,8 @@ jobs:
       
       # Run the R script to fetch/upload news JSON
       - name: Pull news data
+        env:
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
         run: Rscript theNews.R
 
       # Push JSON to repo
